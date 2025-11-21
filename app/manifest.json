@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "TheGrid",
+  "short_name": "TheGrid",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
