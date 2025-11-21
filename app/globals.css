@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Enable daisyUI and set which themes are available */
+@plugin "daisyui" {
+  /* we only enable our custom theme */
+  themes: thegrid --default;
+}
+
+/* Define the custom theme: "thegrid" */
+@plugin "daisyui/theme" {
+  name: "thegrid";
+  default: true;       /* this is default theme */
+  prefersdark: true;   /* treat it as dark mode theme */
+  color-scheme: dark;  /* browser UI (scrollbars, etc.) */
+
+  /* Base (background + text) */
+  --color-base-100: #1B1B1B;  /* main page background - grid black */
+  --color-base-200: #111111;
+  --color-base-300: #1c1c1c;
+  --color-base-content: #ffffff; /* text color */
+
+  /* Brand colors */
+  --color-primary: #BEFF1A;        /* grid light */
+  --color-primary-content: #000000;
+
+  --color-secondary: #003237;      /* grid bg */
+  --color-secondary-content: #ffffff;
+
+  --color-accent: #b4ff00;
+  --color-accent-content: #000000;
+
+  --color-neutral: #1a1a1a;
+  --color-neutral-content: #ffffff;
+
+  /* Semantic colors (tweak if you want) */
+  --color-info: #38bdf8;
+  --color-info-content: #0f172a;
+
+  --color-success: #22c55e;
+  --color-success-content: #022c22;
+
+  --color-warning: #eab308;
+  --color-warning-content: #1f2933;
+
+  --color-error: #ef4444;
+  --color-error-content: #111827;
+
+  /* Optional radii + sizes (for squarish look) */
+  --radius-selector: 0.25rem;
+  --radius-field: 0.125rem;
+  --radius-box: 0.25rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
