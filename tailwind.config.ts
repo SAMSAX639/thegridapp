@@ -7,7 +7,12 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        brigends: ["var(--font-brigends)"],
+        lexend: ["var(--font-lexend)"],
+      },
+    },
   },
   plugins: [], // ⬅️ do NOT put daisyui here in v5
 };
